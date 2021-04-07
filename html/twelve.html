@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body id="body" onload="alert(onload event)">
+    <h1 id="h1" >welcome to JS events </h1>
+    <select onchange="changecolor(this.value)">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+    </select>
+    <button onclick="alert('call  a onclick event')">onclick</button>
+    <button onmouseover="alert('call  mouseover event')">on mouse over</button>
+    <button onmouseout="alert('call  mouseout event')">on on mouse out</button>
+
+</body>
+<script>
+function changecolor(value){
+    document.getElementById("body").style.backgroundcolor=color;
+}
+function color(y)
+{
+    document.getElementById("h1").style.backgroundcolor=y;
+}
+
+</script>
+ 
+</html>
